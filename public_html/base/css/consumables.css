@@ -1,0 +1,33 @@
+/*chargeCSS*/
+.consumables_select{
+	display: block;
+	width: 180px;
+	margin: 0 auto 20px auto;
+	position: relative;
+}
+.open{
+	margin-top:6px;	
+}
+.cons_content{
+	margin: 0 auto;
+	width: 400px;
+}
+h4{
+	text-align: center;
+	padding-bottom: 20px;
+}
+.time{
+	opacity: 0.3;
+	width: 46px;
+	position:absolute;
+	margin-left:750px;
+	margin-top:-75px;
+}
+.time:hover{
+	opacity: 1;
+}
+.for_time{
+	width: 400px;
+	margin: 0 auto;
+	display: none;
+}

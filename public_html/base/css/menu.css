@@ -1,0 +1,53 @@
+#css-menu{
+	width:580px;
+	height:87px;
+	margin:0 auto;
+}
+#css-menu ul {
+list-style: none;
+font-family: Georgia, serif;
+font-size: 18px;
+font-style: italic;
+line-height: 1.4em;
+float: left;
+padding: 0;
+margin: 12px 0 25px 0px;
+}
+
+#css-menu ul li {
+float: left;
+max-width:149px;
+}
+
+#css-menu ul li a {
+display: block;
+text-decoration: none;
+background-color: #595959;
+padding: 5px 10px 0 10px;
+color: #fefefe;
+width: 125px;
+}
+
+#css-menu ul li a span {
+display: block
+}
+
+#css-menu ul li a span.text-top {
+border-bottom: 1px solid #595959 !important;
+text-align: center;
+}
+
+#css-menu ul li a:hover span.text-top {
+border-bottom: 1px dashed #fefefe !important;
+color: #ffddbb;
+}
+
+#css-menu ul li a span.text-bottom {
+visibility: hidden;
+font-size: 11px;
+text-align: right;
+}
+
+#css-menu ul li a:hover span.text-bottom {
+visibility: visible;
+}

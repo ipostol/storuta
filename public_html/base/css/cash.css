@@ -1,0 +1,73 @@
+/*chargeCSS*/
+.cash_table{
+	width:300px;
+	margin:0 auto;
+	position:relative;
+}
+#cash_date{
+	display:block;
+	width:75px;
+	margin:0 auto 20px auto;
+	position:relative;
+}
+td img{
+	padding-left:7px;
+}
+td{
+	vertical-align:text-top;
+}
+.money_in{
+	opacity: 0.3;
+	width:46px;
+	position:absolute;
+	margin-left:-190px;
+	margin-top:-125px;
+}
+.money_out{
+	opacity: 0.3;
+	width:46px;
+	position:absolute;
+	margin-left:445px;
+	margin-top:-125px;
+}
+.i_money_out{
+	width:500px;
+	margin-left:-100px;	
+}
+.arrow_in{
+	opacity: 0.3;
+	width:46px;
+	position:absolute;
+	margin-left:-240px;
+	margin-top:-125px;
+}
+.arrow_out{
+	opacity: 0.3;
+	width:46px;
+	position:absolute;
+	margin-left:495px;
+	margin-top:-125px;
+}
+.arrow_out:hover,.arrow_in:hover,.money_out:hover,.money_in:hover{
+	opacity: 1;
+}
+input{
+	border:1px solid #CCC;
+	text-align:center;
+}
+.ok_in,.ok_out{
+	opacity: 0.3;
+	width:30px;
+	position:absolute;
+	margin-left:5px;
+}
+.ok_in:hover,.ok_out:hover{
+	opacity: 1;
+}
+.vis{
+	display:none;
+}
+.t_money_out{
+	width:450px;
+	margin-left:-75px;
+}

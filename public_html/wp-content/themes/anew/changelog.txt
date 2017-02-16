@@ -1,0 +1,72 @@
+  Theme : Anew
+Version : 2.0.4
+ Author : Alexander "Alx" Agnarson - http://alxmedia.se
+
+December 7 2013 - 2.0.4
+===========================================================
+- Optimized and rewrote layout class and sidebar code
+- Simplified some admin panel descriptions
+- Updated language files
+
+December 6 2013 - 2.0.3
+===========================================================
+- Made all additional function files pluggable for child themes
+- Moved layout class to body_class
+- Moved main div from templates to header and footer
+- Added auto disable for custom wp_title if SEO by Yoast plugin is installed
+- Added basic WooCommerce support
+- Added option to disable category and/or date for AlxTabs and AlxPosts widgets
+- Added forced lowercase letters on custom sidebar IDs
+- Markup polish
+- Updated language files
+
+December 4 2013 - 2.0.2
+===========================================================
+- Updated help dropdown
+- Added child theme info to style.css warning and dynamic css notice
+- Added download link to sample child theme in help dropdown
+
+December 3 2013 - 2.0.1
+===========================================================
+- Moved add_action and add_filter outside of function_exists
+- Added function_exists to functions registering custom widgets
+
+November 30 2013 - 2.0.0
+===========================================================
+- Moved to 2.X.X version number to not receive auto-update notifications from the wordpress.org version
+- Improved child theme support
+- Updated help dropdown
+- Added option for boxed layout for better background image support
+- Added font selection option (also latin-ext, cyrillic)
+- Added empty title/id/icon checks for social links and widget areas
+- Added star indication for admin comments
+- Rebuilt dynamic styling options:
+-- Fixed for theme updates
+-- Fixed for network and subdirectory installations
+-- Fixed so that no file permission/chmod is required
+-- Fixed css for each styling option to only be added if set
+-- Added option to disable styling options css
+-- Removed dynamic.css
+
+November 22 2013 - 1.0.3
+===========================================================
+- Improved IE8 support
+- Added option for header image
+- Fixed nav dropdowns expanding behind second nav row when too many menu links are used
+- Removed custom css field in styling options, replaced with custom.css file option
+- Fixed twitter name option
+- Fixed missing accent color for post-nav arrow hover
+- Changed theme license to GPLv3
+
+November 18 2013 - 1.0.2
+===========================================================
+- Fixed broken comments pagination when there are pingbacks as well
+- Polished and made post author comment icons slightly smaller
+
+November 18 2013 - 1.0.1
+===========================================================
+- Fixed tabs widget tab-button css for better mobile browser compatibility
+
+November 17 2013 - 1.0.0
+===========================================================
+- Theme released

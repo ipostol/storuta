@@ -1,0 +1,168 @@
+html{
+	overflow:scroll;
+}
+#skin{
+	width:900px;
+	margin:0 auto;
+}
+td{
+	vertical-align:top;
+}
+td p{
+	margin-top:5px;
+}
+#all_records td{
+	text-align:center;
+	}
+.minus_but{
+	position:absolute;
+	left:660px;
+	margin-top:5px;
+	}
+.visibility{
+	display:none !important;
+}
+#add_record{
+	width:650px;
+	margin:0 auto;
+	position:relative;
+	}
+#record_table p{
+	text-align:right;
+	}
+#record_table{
+	width:650px;
+}
+#record_table td{	
+	width:50%;
+	padding-left:25px;
+	padding-right:25px;
+}
+.records_button{
+	width:100px;
+	position:relative;
+	left:270px;
+	}
+#time
+{
+	text-align:right;
+	margin-right:10px;
+}
+/*--------------------------------------------------------------*/
+button{
+	border-radius: 5px;
+}
+/*--------------------------------------------------------------*/
+#up{
+	opacity: 0.3;
+	position:fixed;
+	bottom:0;
+	right:0;
+}
+#up:hover{
+	opacity: 1;
+}
+#change_table{
+	width:650px;
+	position:relative;
+	margin: 0 auto;
+}
+#change_table .change_main td{
+	width:50%;
+	font-size:14px;
+	text-align:right;	
+	padding-left:25px;
+	padding-right:25px;
+}
+#change_table .change_main .td_left{
+	text-align:left;	
+}
+.text_center{
+	text-align:center;	
+}
+.separator { 
+	border:1px black solid;
+	background:#000;  
+	width:100%; 
+	margin-top:3px;
+}
+.loading_off{
+	display:none;	
+}
+.loading_on{
+	width:20%;
+	position:fixed;
+	left:40%;
+	top:150px;
+	z-index:100;
+}
+.edit_button_in_change{
+	opacity: 0.3;
+	width:46px;
+	position:absolute;
+	left:630px;
+	top:-75px;
+}
+.info_button{
+	opacity: 0.3;
+	width:46px;
+	position:absolute;
+	left:-26px;
+	top:-75px;
+}
+.ok_button_in_change{
+	opacity: 0.3;
+	width:46px;
+	position:absolute;
+	left:680px;
+	top:-75px;
+}
+.edit_button_in_change:hover,.ok_button_in_change:hover,.info_button:hover{
+	opacity: 1;
+}
+.change_display_none{
+	display:none !important;	
+}
+.change_main .change_display{
+	padding-left:7px;
+}
+.table_change_works .change_display p{
+	padding-left:7px;
+}
+.table_change_goods .change_display p{
+	padding-left:7px;
+}
+.table_change_works select{
+	padding-bottom:4px;
+}
+.padding_for_input{
+	padding-left:7px;
+}
+select{
+	padding-left:2px;
+	padding-bottom:5px;
+}
+.not_price{
+}
+.not_price1{
+	display:none;
+}
+.buy_good{
+	margin-top:-2px;	
+	padding-left:21px;
+}
+/*---------------------*/
+.top_info_records{
+	position:absolute;
+	top:0px;
+	left:10px;
+}
+.table_change_goods .minus_but{
+	margin-top: -35px;
+}
+.yellow{
+	background-color: yellow;
+}
+.red {
+	background-color: red !important;
+}
