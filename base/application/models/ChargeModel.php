@@ -26,12 +26,17 @@ class ChargeModel{
 
 		foreach($works as $work){
 			foreach($records as $record){
-				if($work['record_id']==$record['id']){
-					$charge[100][] = array('id' => $record['id'],'money' => $work['price']*0.08,'auto' => $work['auto'],'name' => $work['work'], 'date' => $work['date_out']);
-					$charge[101][] = array('id' => $record['id'],'money' => $work['price']*0.32,'auto' => $work['auto'],'name' => $work['work'], 'date' => $work['date_out']);
-					if($work['date_out'] > strtotime('14.03.2015') && $work['date_out'] < strtotime('30.09.2015'))
-						$charge[99][] = array('id' => $record['id'],'money' => $work['price']*0.05,'auto' => $work['auto'],'name' => $work['work'], 'date' => $work['date_out']);
-					$charge[$work['employee']][] = array('id' => $record['id'],'money' => $work['price']*0.4,'auto' => $work['auto'],'name' => $work['work'], 'date' => $work['date_out']);
+				if($work['record_id']==$record['id']) {
+					if ($work['date_out'] < strtotime('1.05.2017')) {
+						$charge[100][] = array('id' => $record['id'],'money' => $work['price'] * 0.08,'auto' => $work['auto'],'name' => $work['work'], 'date' => $work['date_out']);
+						$charge[101][] = array('id' => $record['id'],'money' => $work['price'] * 0.32,'auto' => $work['auto'],'name' => $work['work'], 'date' => $work['date_out']);
+					} else {
+						$charge[100][] = array('id' => $record['id'],'money' => $work['price'] * 0.15,'auto' => $work['auto'],'name' => $work['work'], 'date' => $work['date_out']);
+						$charge[101][] = array('id' => $record['id'],'money' => $work['price'] * 0.25,'auto' => $work['auto'],'name' => $work['work'], 'date' => $work['date_out']);
+					}
+					if ($work['date_out'] > strtotime('14.03.2015') && $work['date_out'] < strtotime('30.09.2015'))
+						$charge[99][] = array('id' => $record['id'],'money' => $work['price'] * 0.05,'auto' => $work['auto'],'name' => $work['work'], 'date' => $work['date_out']);
+					$charge[$work['employee']][] = array('id' => $record['id'],'money' => $work['price'] * 0.4,'auto' => $work['auto'],'name' => $work['work'], 'date' => $work['date_out']);
 					break;
 				}
 			}
@@ -41,10 +46,10 @@ class ChargeModel{
 
 		foreach($goods as $good){
 			if($good['price']-$good['price_self'] != 0){
-				$charge[100][] = array('id' => $good['id'],'money' => ($good['price']-$good['price_self'])*0.16,'auto' => $good['auto'], 'name' => $good['name'], 'date' => $good['date_out']);
-				$charge[101][] = array('id' => $good['id'],'money' => ($good['price']-$good['price_self'])*0.64,'auto' => $good['auto'], 'name' => $good['name'], 'date' => $good['date_out']);
+				$charge[100][] = array('id' => $good['id'],'money' => ($good['price']-$good['price_self']) * 0.16,'auto' => $good['auto'], 'name' => $good['name'], 'date' => $good['date_out']);
+				$charge[101][] = array('id' => $good['id'],'money' => ($good['price']-$good['price_self']) * 0.64,'auto' => $good['auto'], 'name' => $good['name'], 'date' => $good['date_out']);
 				if($good['date_out'] > strtotime('14.03.2015') && $good['date_out'] < strtotime('30.09.2015'))
-					$charge[99][] = array('id' => $good['id'],'money' => ($good['price']-$good['price_self'])*0.05,'auto' => $good['auto'], 'name' => $good['name'], 'date' => $good['date_out']);
+					$charge[99][] = array('id' => $good['id'],'money' => ($good['price']-$good['price_self']) * 0.05,'auto' => $good['auto'], 'name' => $good['name'], 'date' => $good['date_out']);
 			}
 		}
 		unset($good);
