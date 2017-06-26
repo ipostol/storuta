@@ -40,8 +40,8 @@ class RecordChangeModel{
 				$forecast[$work['employee']] = array('0' => 0, '1' => 0, '2' => 0);
 			$forecast[$work['employee']][0] += (int)$work['price'] * 0.4;
 			//$forecast[99][0] += (int)$work['price'] * 0.05;
-			$forecast[100][0] += (int)$work['price'] * 0.08;
-			$forecast[101][0] += (int)$work['price'] * 0.32;
+			$forecast[100][0] += (int)$work['price'] * 0.15;
+			$forecast[101][0] += (int)$work['price'] * 0.25;
 			$forecast['consumables'][0] += (int)$work['price'] * 0.2;
 			
 		}	
